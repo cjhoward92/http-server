@@ -9,4 +9,4 @@ cd build
 
 echo "Building"
 cmake ..
-cmake -DCMAKE_BUILD_TYPE=Debug --build .
+cmake --build .
