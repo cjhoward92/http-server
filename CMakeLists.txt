@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(http)
+project(http CXX)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ggdb")
 
 # v1.34.2
 include_directories(libuv/include)
 add_subdirectory(libuv)
 
-add_executable(http src/main.cpp)
+add_executable(http src/main.cpp src/server.cpp)
 
-target_link_libraries(http uv)
+target_link_libraries(http PRIVATE uv)
