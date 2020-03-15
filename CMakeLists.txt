@@ -5,8 +5,6 @@ project(http CXX)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ggdb")
 
 add_subdirectory(spdlog)
-
-include_directories(libuv/include)
 add_subdirectory(libuv)
 
 add_executable(http src/main.cpp src/server.cpp)
