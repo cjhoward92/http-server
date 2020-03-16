@@ -4,10 +4,10 @@ My attempt at an HTTP server in all C++.
 
 ## Dependencies
 
-libuv
-spdlog
-http-parser
-
+libuv  
+spdlog  
+http-parser  
+  
 I'm using a lot of the node libraries, without node...
 
 ## Building
