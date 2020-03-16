@@ -1,11 +1,7 @@
 #ifndef __HTTP_SERVER_CPP__
 #define __HTTP_SERVER_CPP__
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <uv.h>
-#include <sys/socket.h>
+#include "stdhdr.hpp"
 
 #define DEFAULT_PORT 8080
 #define DEFAULT_BACKLOG 1024

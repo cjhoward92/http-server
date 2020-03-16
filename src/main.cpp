@@ -1,12 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <iostream>
-#include <uv.h>
-#include <sys/socket.h>
-
-#include "spdlog/spdlog.h"
+#include "stdhdr.hpp"
 #include "server.hpp"
+#include "http_parser.h"
 
 using namespace std;
 
