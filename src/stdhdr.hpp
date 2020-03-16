@@ -10,4 +10,6 @@
 #include "spdlog/spdlog.h"
 #include "http_parser.h"
 
+using namespace std;
+
 #endif

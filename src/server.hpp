@@ -19,18 +19,20 @@ public:
     int getPort();
     int getBacklog();
 
-    void start();
+    int start();
 
 private:
     int _port;
     int _backlog;
 
-    uv_loop_t *loop;
     struct sockaddr_in addr;
-    uv_stream_t *server;
+    uv_tcp_t server;
 
     void setup();
-    void listen();
+    int listen();
+    
+    static uv_loop_t *_loop;
+    static void onNewConnection(uv_stream_t *svr, int status);
 };
 
 #endif
