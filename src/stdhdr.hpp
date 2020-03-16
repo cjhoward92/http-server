@@ -8,5 +8,6 @@
 #include <sys/socket.h>
 
 #include "spdlog/spdlog.h"
+#include "http_parser.h"
 
 #endif

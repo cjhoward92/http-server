@@ -1,6 +1,5 @@
 #include "stdhdr.hpp"
 #include "server.hpp"
-#include "http_parser.h"
 
 using namespace std;
 
@@ -70,7 +69,7 @@ void on_new_connection(uv_stream_t *server, int status) {
 }
 
 int main() {
-    spdlog::info("Hello darkness my old friend");
+    spdlog::debug("Hello darkness my old friend");
 
     HttpServer httpServer = HttpServer();
     httpServer.start();

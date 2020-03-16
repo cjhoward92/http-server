@@ -10,7 +10,7 @@
  */
 
 HttpServer::~HttpServer() {
-    printf("We are destroying\n");
+    spdlog::debug("We are destroying\n");
 }
 
 int HttpServer::getBacklog() {
@@ -22,7 +22,7 @@ int HttpServer::getPort() {
 }
 
 void HttpServer::start() {
-    printf("Starting HTTP server\n");
+    spdlog::debug("Starting HTTP server\n");
 }
 
 void HttpServer::setup() {
